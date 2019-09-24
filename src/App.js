@@ -12,8 +12,8 @@ class App extends React.Component {
   }
   getTodos = () => {
 
-    axios.get("https://jsonplaceholder.typicode.com/todos").then((data)=>{
-      
+    axios.get("https://jsonplaceholder.typicode.com/todos")
+    .then((data)=>{
      const todos = data.data.map((value)=>{
         const title = value.title;
         const completed = ""+value.completed;
